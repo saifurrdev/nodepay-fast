@@ -15,7 +15,7 @@ _in = input('Put Auth Token :\033[1;32m ')
 print('\033[0m-----------------------------------')
 reqx = {
     "ses": "https://api.nodepay.ai/api/auth/session",
-    "png": "http://52.77.10.116/api/network/ping"
+    "png": "http://nw.nodepay.ai/api/network/ping"
 }
 user_id = None
 def all_req(local_proxies):
