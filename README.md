@@ -1,18 +1,25 @@
-# 🌟 Installation 
-```
-git clone --depth=1 https://github.com/nbprg/nodepay-fast
-```
-```
-cd nodepay-fast
-```
-- Open ```proxy.txt``` file use : ```nano proxy.txt``` & paste Your proxy one by one.
-- Save & close proxy file using : ```ctrl``` ```x``` ```y``` then enter.
-- Then Open Kiwi Browser & Copy ```np_token``` by console command
-```
-localStorage.getItem('np_token')
-```
-- Then Run 👇
-```
+# nodepay-fast
+
+Automated NodePay mining ping script with multi-proxy support. Uses `np_token` authentication and cloudscraper for requests.
+
+## Usage
+
+1. Add proxies to `proxy.txt` (one per line)
+2. Get your `np_token` from NodePay dashboard (browser console: `localStorage.getItem('np_token')`)
+3. Run the script:
+
+```bash
 python nodepay.py
 ```
-- If You face any problem dm : ```@TataCuto``` (Tg)
+
+## Requirements
+
+- Python 3.12+
+- `cloudscraper`
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| `nodepay.py` | Main mining script |
+| `proxy.txt` | Proxy list (one per line) |
